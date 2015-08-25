@@ -1,5 +1,39 @@
 /* CSS declarations go here */
+body {
+  font-family:"Helvetica Neue";
+  color: #686765;
+}
 
-section.flexbox-container {
+.flexbox-container {
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+}
+article#content {
+  flex-basis: 70%;
+  -webkit-flex-basis: 70%;
+  flex-grow: 1;
+  -webkit-flex-grow: 1;
+  flex-shrink: 1;
+  -webkit-flex-shrink: 1;
+}
+aside#rightbar {
+  background-color: lightyellow;
+  flex-basis: 350px;
+  -webkit-flex-basis: 350px;
+  flex-grow: 0;
+  -webkit-flex-grow: 0;
+  flex-shrink: 0;
+  -webkit-flex-shrink: 0;
+}
 
+footer > .footer-col {
+  flex-basis: auto;
+  -webkit-flex-basis: auto;
+  flex-grow: 1;
+  -webkit-flex-grow: 1;
+}
+
+#copyright > p {
+  float: right;
 }
