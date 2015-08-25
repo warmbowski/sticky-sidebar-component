@@ -4,6 +4,29 @@ body {
   color: #686765;
 }
 
+ul li {
+  list-style: none;
+}
+
+header#topheader {
+  /*position: fixed;
+  top: 0;
+  left: 0;*/
+  width: 100%;
+  height: 50px;
+  background-image: url("https://cdn0.iconfinder.com/data/icons/sweets/147/glasses.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: gray;
+}
+
+header#subheader {
+  margin-top: -21px;
+  height: 125px;
+  background-color: pink;
+}
+
 .flexbox-container {
   display: flex;
   display: -webkit-flex;
@@ -16,15 +39,71 @@ article#content {
   -webkit-flex-grow: 1;
   flex-shrink: 1;
   -webkit-flex-shrink: 1;
+  padding-right: 5px;
 }
+
+.article-image {
+  float: left;
+  margin: 3px;
+  width: 400px;
+}
+
 aside#rightbar {
-  background-color: lightyellow;
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flex;
   flex-basis: 350px;
   -webkit-flex-basis: 350px;
   flex-grow: 0;
   -webkit-flex-grow: 0;
   flex-shrink: 0;
   -webkit-flex-shrink: 0;
+  position: relative;
+  background-color: lightyellow;
+}
+
+.sticky-content {
+  box-sizing: border-box;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 5px;
+  width: 350px;
+  align-self: flex-start;
+}
+
+.stick-to-top {
+  position: fixed;
+  top: 0;
+}
+
+.stick-to-bot {
+  position: static;
+  align-self: flex-end;
+}
+
+section#suggested-content {
+  background-image: url("http://rack.0.mshcdn.com/media/ZgkyMDE1LzA1LzEwLzgzL2hpcHN0ZXJfY29wLjc4ZTk5LmpwZwpwCXRodW1iCTk1MHg1MzQjCmUJanBn/dc425752/8f2/hipster_cop1.jpg");
+  height: 480px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 500px;
+  align-items: center;
+  background-color: lightblue;
+  justify-content: space-around;
+}
+
+section#suggested-content img {
+  flex-basis: auto;
+  -webkit-flex-basis: auto;
+  flex-grow: 0;
+  -webkit-flex-grow: 0;
+}
+
+footer {
+  height: 300px;
+  background-color: lightgreen;
 }
 
 footer > .footer-col {
@@ -36,4 +115,13 @@ footer > .footer-col {
 
 #copyright > p {
   float: right;
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+/* CSS styles for smartphones here */
+  body {
+    font-size: 15px;
+  }
 }
