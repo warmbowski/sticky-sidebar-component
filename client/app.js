@@ -1,8 +1,7 @@
 var scroller = function() {
-  var sbPos = $('body').scrollTop();
+  var sbPos = $(window).scrollTop();
   var topThresh = $('.sticky-col').offset().top;
-  var botThresh = topThresh + $('.sticky-col').height() - $('.sticky-content').height() - (parseInt($('.sticky-content').css('padding')) * 2);
-
+  var botThresh = topThresh + $('.sticky-col').height() - $('.sticky-content').height() - (parseInt($('.sticky-content').css('paddingTop')) * 2);
   $('div.scroll-output').text('scrollTop:' + sbPos);
 
   if(sbPos > topThresh) {
