@@ -8,7 +8,6 @@ Aside = React.createClass({
   },
 
   handleScroll: function(evt) {
-    console.log(this.getDOMNode());
     var stickyCol = this.getDOMNode();
     var stickyColBox = stickyCol.getBoundingClientRect();
     var stickyContent = stickyCol.childNodes[0];
