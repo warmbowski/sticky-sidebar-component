@@ -3,7 +3,7 @@ Article = React.createClass({
   render: function() {
     return (
       <article id="content">
-        <img class="article-image" src="http://www.createawards.com.au/wp-content/uploads/2011/07/Josephmark-Illustration-PocketHipster-LowRes-1.jpg"/>
+        <img className="article-image" src="http://www.createawards.com.au/wp-content/uploads/2011/07/Josephmark-Illustration-PocketHipster-LowRes-1.jpg"/>
         <p>Drinking vinegar narwhal freegan twee, Echo Park messenger bag direct trade lumbersexual migas jean shorts. Wayfarers flannel Tumblr Echo Park Vice, Godard cliche ugh asymmetrical. Authentic aesthetic master cleanse locavore Marfa migas. Migas paleo listicle, Carles chia photo booth Portland Tumblr readymade fap plaid. Vegan McSweeney's meh, shabby chic brunch pug semiotics locavore Brooklyn gastropub Austin bitters jean shorts kitsch flannel. Locavore literally cronut Helvetica mixtape. Marfa pug polaroid, vinyl lumbersexual tattooed artisan American Apparel irony ennui direct trade fashion axe dreamcatcher mlkshk.</p>
 
         <p>Butcher tousled viral, fanny pack crucifix Brooklyn vinyl Carles photo booth mlkshk gluten-free. You probably haven't heard of them XOXO Odd Future, Brooklyn Godard hashtag art party. Pour-over farm-to-table letterpress fanny pack. Fingerstache Kickstarter tofu, VHS actually master cleanse PBR&B cardigan hashtag keffiyeh squid blog flannel synth Bushwick. Bitters jean shorts farm-to-table tofu, before they sold out synth actually tilde Banksy forage authentic. You probably haven't heard of them American Apparel farm-to-table hoodie street art High Life, wolf keytar mixtape. Carles Marfa paleo, beard lumbersexual locavore hoodie 90's fap fashion axe swag you probably haven't heard of them shabby chic bitters.</p>

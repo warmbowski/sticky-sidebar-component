@@ -2,7 +2,7 @@ Aside = React.createClass({
 
   render: function() {
     return (
-      <aside id="rightbar" class="sticky-col">
+      <aside id="rightbar" className="sticky-col">
         <StickyContent />
       </aside>
     );

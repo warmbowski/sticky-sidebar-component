@@ -1,8 +1,8 @@
-MainContainer = React.createClass({
+ContentContainer = React.createClass({
 
   render: function() {
     return (
-      <section id="main" class="flexbox-container">
+      <section id="main" className="flexbox-container">
         <Article />
         <Aside />
       </section>
