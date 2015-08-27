@@ -8,7 +8,7 @@ ul li {
   list-style: none;
 }
 
-header#topheader {
+#topheader {
   /*position: fixed;
   top: 0;
   left: 0;*/
@@ -21,7 +21,7 @@ header#topheader {
   background-color: gray;
 }
 
-header#subheader {
+#subheader {
   margin-top: -21px;
   height: 125px;
   background-color: pink;
@@ -32,7 +32,8 @@ header#subheader {
   display: -webkit-flex;
   display: -ms-flex;
 }
-article#content {
+
+#content {
   flex-basis: 70%;
   -webkit-flex-basis: 70%;
   flex-grow: 1;
@@ -48,7 +49,7 @@ article#content {
   width: 400px;
 }
 
-aside#rightbar {
+#rightbar {
   display: flex;
   display: -webkit-flex;
   display: -ms-flex;
@@ -83,7 +84,7 @@ aside#rightbar {
   -webkit-align-self: flex-end;
 }
 
-section#suggested-content {
+#suggested-content {
   background-image: url("http://rack.0.mshcdn.com/media/ZgkyMDE1LzA1LzEwLzgzL2hpcHN0ZXJfY29wLjc4ZTk5LmpwZwpwCXRodW1iCTk1MHg1MzQjCmUJanBn/dc425752/8f2/hipster_cop1.jpg");
   height: 480px;
   background-position: 50% 50%;
@@ -98,7 +99,7 @@ section#suggested-content {
   -webkit-justify-content: space-around;
 }
 
-section#suggested-content img {
+#suggested-content img {
   flex-basis: auto;
   -webkit-flex-basis: auto;
   flex-grow: 0;
