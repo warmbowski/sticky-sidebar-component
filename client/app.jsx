@@ -1,9 +1,10 @@
-var scroller = function() {
-  
-};
-
 Meteor.startup(function(){
-  React.render(<ContentContainer />, document.getElementById('yield-content-container'));
-  scroller();
-  $(window).scroll(scroller);
+  React.render(
+    <ContentContainer
+      textSrc='http://hipsterjesus.com/api/?type=hipster-centric'
+      textLength='4'
+      picSrc='http://www.createawards.com.au/wp-content/uploads/2011/07/Josephmark-Illustration-PocketHipster-LowRes-1.jpg'
+    />,
+    document.getElementById('yield-content-container')
+  );
 });
