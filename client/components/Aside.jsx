@@ -13,14 +13,21 @@ Aside = React.createClass({
     var stickyContent = stickyCol.childNodes[0];
     var stickyContentBox = stickyContent.getBoundingClientRect();
 
-    if(stickyContentBox.bottom >= stickyColBox.bottom ) {
+    if(stickyContentBox.bottom >= stickyColBox.bottom - 1) {
+      //firefox has floating point problem, so subtracted one px to counteract
+
       if(stickyColBox.top <= 0 && stickyContentBox.top > 0) {
         stickyContent.classList.add('stick-to-top');
+        stickyContent.classList.remove('stick-to-bot');
+      } else if(stickyColBox.top >= 0) {
+        //scroll to top too fast
+        stickyContent.classList.remove('stick-to-top');
         stickyContent.classList.remove('stick-to-bot');
       } else {
         stickyContent.classList.add('stick-to-bot');
         stickyContent.classList.remove('stick-to-top');
       }
+
     } else {
       if(stickyContentBox.top >= 0 && stickyColBox.top >= 0) {
         stickyContent.classList.remove('stick-to-top');
